@@ -21,8 +21,8 @@ import lombok.NoArgsConstructor;
 public class AutorDto {
     private Integer codAutor;
     
-    @NotBlank(message = "O campo nome não pode estar vazio")
-    @Size(max = 40, message = "O campo nome não pode conter mais de 40 caracteres")
+    @NotBlank(message = "{erro.validacao.autor.campo.nome.obrigatorio}")
+    @Size(max = 40, message = "{erro.validacao.autor.campo.nome.maxCaracteres}")
     private String nome;
     
     private List<LivroResponseDto> livros;

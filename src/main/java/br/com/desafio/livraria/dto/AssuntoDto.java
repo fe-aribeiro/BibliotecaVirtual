@@ -21,8 +21,8 @@ import lombok.NoArgsConstructor;
 public class AssuntoDto {
     private Integer codAssunto;
     
-    @NotBlank(message = "O campo descrição não pode estar vazio")
-    @Size(max = 20, message = "O campo descrição não pode conter mais de 20 caracteres")
+    @NotBlank(message = "{erro.validacao.assunto.campo.descricao.obrigatorio}")
+    @Size(max = 20, message = "{erro.validacao.assunto.campo.descricao.maxCaracteres}")
     private String descricao;
     
     private List<LivroResponseDto> livros;
