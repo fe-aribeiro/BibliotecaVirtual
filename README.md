@@ -26,7 +26,7 @@ A aplicação permite adicionar livros, autores e assuntos, fazer o vínculo ent
 ## 📁 Estrutura do Projeto
 
 ```
-livraria/
+biblioteca-virtual-api/
 ├── src/main/java/br/com/desafio/livraria/
 │   ├── controller/        # Camada de controllers REST
 │   ├── service/           # Lógica de negócio
