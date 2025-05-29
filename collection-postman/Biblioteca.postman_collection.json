@@ -1,0 +1,565 @@
+{
+	"info": {
+		"_postman_id": "156fe785-ed05-4c27-8aa2-984f61adf707",
+		"name": "Biblioteca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13410978"
+	},
+	"item": [
+		{
+			"name": "Livros",
+			"item": [
+				{
+					"name": "Listar Livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros"
+							],
+							"query": [
+								{
+									"key": "titulo",
+									"value": "pequeno",
+									"disabled": true
+								},
+								{
+									"key": "editora",
+									"value": "editora",
+									"disabled": true
+								},
+								{
+									"key": "edicao",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "anoPublicacao",
+									"value": "2025",
+									"disabled": true
+								},
+								{
+									"key": "valorMaiorQue",
+									"value": "25.97",
+									"disabled": true
+								},
+								{
+									"key": "valorMenorQue",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "tamanho",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "pagina",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "ordenarPor",
+									"value": "titulo,asc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Livro por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar Livro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Chapeuzinho Vermelho\",\r\n  \"editora\": \"Editora Cassol\",\r\n  \"edicao\": 4,\r\n  \"anoPublicacao\": \"2014\",\r\n  \"valor\": 25.98\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Livro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Pequeno Principe\",\r\n  \"editora\": \"Disney\",\r\n  \"edicao\": 1,\r\n  \"anoPublicacao\": \"1943\",\r\n  \"valor\": 145.99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Livro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vincular Livro com Autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros/6/autores/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros",
+								"6",
+								"autores",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover Vinculo de Livro com Autor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros/5/autores/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros",
+								"5",
+								"autores",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vincular Livro com Assunto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros/5/assuntos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros",
+								"5",
+								"assuntos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover Vinculo de Livro com Assunto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/livros/3/assuntos/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"livros",
+								"3",
+								"assuntos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "Listar Autores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/autores",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"autores"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Clarice",
+									"disabled": true
+								},
+								{
+									"key": "tamanho",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "pagina",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "ordenarPor",
+									"value": "codAutor,desc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Autor por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/autores/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"autores",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar Autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Clarice Linspector\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/biblioteca/autores",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Autor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Clarice Linspector\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/biblioteca/autores/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"autores",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Autor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/autores/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"autores",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assunto",
+			"item": [
+				{
+					"name": "Listar Assuntos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/assuntos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"assuntos"
+							],
+							"query": [
+								{
+									"key": "descricao",
+									"value": "historia",
+									"disabled": true
+								},
+								{
+									"key": "tamanho",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "pagina",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "ordenarPor",
+									"value": "codAssunto,desc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Assunto por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/assuntos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"assuntos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar Assunto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descricao\": \"Historia Infantil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/biblioteca/assuntos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"assuntos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Assunto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descricao\": \"Fantasia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/biblioteca/assuntos/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"assuntos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Assunto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/biblioteca/assuntos/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biblioteca",
+								"assuntos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Relatorio",
+			"item": [
+				{
+					"name": "Gerar Relatorio Pdf",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
