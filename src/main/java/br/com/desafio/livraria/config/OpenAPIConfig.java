@@ -14,6 +14,6 @@ public class OpenAPIConfig {
             .info(new Info()
                 .title("API Biblioteca")
                 .version("1.0")
-                .description("Gerenciamento de Livros, Autores e Assuntos"));
+                .description("Gerenciamento de Livros, Autores e Assuntos. Gera também relatório em PDF agrupado por autor."));
     }
 }

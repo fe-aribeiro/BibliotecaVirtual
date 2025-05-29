@@ -11,7 +11,7 @@
 	<groupId>br.com.desafio</groupId>
 	<artifactId>livraria</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>livraria</name>
+	<name>biblioteca-virtual-api</name>
 	<description>Desafio técnico </description>
 	<url/>
 	<licenses>
