@@ -1,7 +1,8 @@
 
 # 📚 API de Biblioteca Virtual
 
-Esta é uma API RESTful desenvolvida em **Java 17** com **Spring Boot 3.5.0** para gerenciar uma biblioteca virtual. A aplicação permite adicionar livros, autores e assuntos, fazer o vínculo entre eles e gerar relatórios agrupados por autor.
+Esta é uma API RESTful desenvolvida em **Java 17** com **Spring Boot 3.5.0** para gerenciar uma biblioteca virtual.  
+A aplicação permite adicionar livros, autores e assuntos, fazer o vínculo entre eles e gerar relatórios agrupados por autor.
 
 ## 🚀 Tecnologias Utilizadas
 
