@@ -39,8 +39,9 @@ livraria/
 
 ## 🐳 Subindo o Banco com Docker
 
-Dentro da pasta `db-docker`, você encontrará um arquivo `docker-compose.yml`.
-Dentro do `pom.xml` do projeto você encontra um script responsável por subir o banco usando o docker sempre que o projeto for buildado. (Caso o banco já esteja rodando o comando não é executado)
+Dentro da pasta `db-docker`, você encontrará um arquivo `docker-compose.yml`.  
+Dentro do `pom.xml` do projeto você encontra um script responsável por subir o banco usando o docker sempre que o projeto for buildado.  
+(Caso o banco já esteja rodando o comando não é executado)
 
 ## 🌐 Acessando a Documentação da API
 
