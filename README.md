@@ -56,6 +56,11 @@ http://localhost:8080/swagger-ui.html
 
 A estrutura está preparada para testes unitários com JUnit 5 e Mockito.
 
+## 📬 Testes com Postman
+
+Dentro da pasta `collection-postman`, você encontrará a collection `Biblioteca.postman_collection.json` contendo requisições organizadas para testar todos os endpoints da API.  
+Essa collection pode ser importada diretamente no Postman para facilitar o uso e a validação dos recursos disponíveis.
+
 ## ✍️ Autor
 
 Projeto desenvolvido como parte de um desafio técnico.
