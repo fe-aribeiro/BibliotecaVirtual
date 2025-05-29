@@ -34,6 +34,7 @@ livraria/
 │   ├── model/             # Entidades JPA
 │   ├── dto/               # Objetos de transferência de dados
 │   └── config/            # Configurações da aplicação
+├── collection-postman/    # Arquivo de collection utilizado para testar a api no Postman
 ├── db-docker/             # Arquivos para subir banco com Docker
 ├── pom.xml                # Dependências do projeto
 ```
