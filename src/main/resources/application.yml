@@ -1,0 +1,24 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/desafio_spassu
+    username: spassu
+    password: spassu
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: OFF
+        type:
+          descriptor:
+            sql: OFF

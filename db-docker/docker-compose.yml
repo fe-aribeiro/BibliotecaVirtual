@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: desafio_spassu
+      POSTGRES_USER: spassu
+      POSTGRES_PASSWORD: spassu
+    volumes:
+      - ./db-desafio:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - postgres_network
+
+networks:
+  postgres_network:
+    driver: bridge
